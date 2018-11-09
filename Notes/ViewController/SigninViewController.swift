@@ -12,7 +12,6 @@ import FirebaseAuth
 import GoogleSignIn
 
 class SigninViewController: UIViewController ,GIDSignInUIDelegate {
-    let userDefault = UserDefaults.standard
     override func viewDidLoad() {
     
         super.viewDidLoad()
@@ -22,12 +21,12 @@ class SigninViewController: UIViewController ,GIDSignInUIDelegate {
     
     func SignIn() {
         GIDSignIn.sharedInstance().uiDelegate = self
+        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        if userDefault.bool(forKey: "usersignedin") {
-            performSegue(withIdentifier: "HomeNote", sender: self)
-        }
+    @IBAction func btnLogin(_ sender: Any) {
+ 
+        self.performSegue(withIdentifier: "HomeNote", sender: nil)
     }
 }
 

@@ -10,43 +10,22 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate  {
    
+    
     var window: UIWindow?
-    let userdefault = UserDefaults()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         return true
-    }
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        //..
-        if let err = error {
-            print("Failed to log into Google: ",err)
-            return
-        } else {
-            print("Success to logged into Google: ",user)
-        }
-        guard let idToken = user.authentication.idToken else { return }
-        guard let accessToken = user.authentication.accessToken else {return}
-        let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
-        Auth.auth().signInAndRetrieveData(with: credential) {(result, error) in
-            if let err = error {
-                print("Không tạo được trên Firebase")
-            } else {
-                print("Tạo thành công trên Firebase ")
-                
-            }
-        }
-        
-    }
-
-        func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser , withError error: Error!){
-            
         }
     }
+    
      func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: [:])
     }
