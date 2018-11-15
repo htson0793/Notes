@@ -12,17 +12,26 @@ import FirebaseAuth
 import GoogleSignIn
 
 class SigninViewController: UIViewController ,GIDSignInUIDelegate {
-    override func viewDidLoad() {
     
+    var users = [Users]()
+    
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        SignIn()
+       SignIn()
+    }
+    
+    func reference(to collectionReference: referenceSevices ) -> CollectionReference{
+        return Firestore.firestore().collection(collectionReference.rawValue)
     }
     
     func SignIn() {
         GIDSignIn.sharedInstance().uiDelegate = self
+      
         
     }
+    
+    
     
     @IBAction func btnLogin(_ sender: Any) {
  

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
 
 class CreateViewController: UIViewController {
 
@@ -16,23 +17,37 @@ class CreateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign Out ", style: .done, target: self, action:#selector (btnSignOut))
     }
     
-    func reference(to collectionReference: referenceSevices ) -> CollectionReference{
+    func reference(to collectionReference: referenceSevices  ) -> CollectionReference{
         return Firestore.firestore().collection(collectionReference.rawValue)
     }
     
+    
+    @IBAction func btnSignOut() {
+        GIDSignIn.sharedInstance().signOut()
+        print("Sign Out")
+    }
+    
     @IBAction func btnNewNote(_ sender: Any) {
+        let user =  Auth.auth().currentUser
+        let userUid = user?.uid
+        
         guard let textTitle = txtTitle.text else {return}
         guard let textContent = txvContent.text else {return}
-        let dataSave : [String: Any] = ["title" : textTitle,
-                                    "content" : textContent]
+        let dataSave : [String: Any] = [notesDocuments.title : textTitle,
+                                        notesDocuments.content : textContent,
+                                        Users.uid : userUid as Any]
         reference(to: .notes).addDocument(data: dataSave){(error) in
             if let error = error {
                 print("Error")
+                
             } else {
                 print("OK!")
+                
             }
+      
         }
     }
 }

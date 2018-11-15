@@ -9,8 +9,12 @@
 import Foundation
 
 struct Notes {
-    
     var title : String?
     var content : String?
-    
+    var listid : String?
+}
+
+struct notesDocuments {
+    static let title = "title"
+    static let content = "content"
 }

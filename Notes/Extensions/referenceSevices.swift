@@ -7,7 +7,9 @@
 //
 
 import Foundation
+    enum referenceSevices : String {
+        case notes
+        case users
+    }
 
-enum referenceSevices : String {
-    case notes
-}
+

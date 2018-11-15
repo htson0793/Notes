@@ -13,11 +13,15 @@
 		EF0A96862195603E00A28D85 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A96852195603E00A28D85 /* Notes.swift */; };
 		EF0A96882195609A00A28D85 /* referenceSevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A96872195609A00A28D85 /* referenceSevices.swift */; };
 		EF0A968A21956A2C00A28D85 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A968921956A2C00A28D85 /* CreateViewController.swift */; };
+		EF0AF3352199D70F007851A4 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AF3342199D70F007851A4 /* DataBase.swift */; };
 		EF3D06D6219139B00020D310 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF3D06D5219139B00020D310 /* GoogleService-Info.plist */; };
 		EF3D06D9219140D30020D310 /* AvenirNextLTPro-BoldCnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF3D06D8219140AC0020D310 /* AvenirNextLTPro-BoldCnIt.otf */; };
 		EF3D06DB2191428B0020D310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3D06DA2191428B0020D310 /* Assets.xcassets */; };
 		EF5763CB2192B2FB004FF5E0 /* Appdelegate:GoogleSignin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5763CA2192B2FB004FF5E0 /* Appdelegate:GoogleSignin.swift */; };
 		EF8466BF2191D17F00A4DD7E /* ListNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8466BE2191D17F00A4DD7E /* ListNoteViewController.swift */; };
+		EF9431B3219C0F0E000EB681 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9431B2219C0F0E000EB681 /* EditViewController.swift */; };
+		EF9431B5219C116B000EB681 /* Edits.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9431B4219C116B000EB681 /* Edits.swift */; };
+		EF9431B7219C12D9000EB681 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9431B6219C12D9000EB681 /* SettingViewController.swift */; };
 		EFA4DD4C2190599D00C0B431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4DD4B2190599D00C0B431 /* AppDelegate.swift */; };
 		EFA4DD4E2190599D00C0B431 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4DD4D2190599D00C0B431 /* SigninViewController.swift */; };
 		EFA4DD512190599D00C0B431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA4DD4F2190599D00C0B431 /* Main.storyboard */; };
@@ -26,6 +30,7 @@
 		EFA4DD6C2190599F00C0B431 /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4DD6B2190599F00C0B431 /* NotesUITests.swift */; };
 		EFBF294A219210F800356B71 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBF2948219210F800356B71 /* ListTableViewCell.swift */; };
 		EFBF294B219210F800356B71 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBF2949219210F800356B71 /* ListTableViewCell.xib */; };
+		EFD52F7921989EB5007F2A65 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD52F7821989EB5007F2A65 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +63,15 @@
 		EF0A96852195603E00A28D85 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		EF0A96872195609A00A28D85 /* referenceSevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referenceSevices.swift; sourceTree = "<group>"; };
 		EF0A968921956A2C00A28D85 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		EF0AF3342199D70F007851A4 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		EF3D06D5219139B00020D310 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF3D06D8219140AC0020D310 /* AvenirNextLTPro-BoldCnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-BoldCnIt.otf"; sourceTree = "<group>"; };
 		EF3D06DA2191428B0020D310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5763CA2192B2FB004FF5E0 /* Appdelegate:GoogleSignin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appdelegate:GoogleSignin.swift"; sourceTree = "<group>"; };
 		EF8466BE2191D17F00A4DD7E /* ListNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNoteViewController.swift; sourceTree = "<group>"; };
+		EF9431B2219C0F0E000EB681 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		EF9431B4219C116B000EB681 /* Edits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edits.swift; sourceTree = "<group>"; };
+		EF9431B6219C12D9000EB681 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EFA4DD482190599D00C0B431 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA4DD4B2190599D00C0B431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA4DD4D2190599D00C0B431 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +86,7 @@
 		EFA4DD6D2190599F00C0B431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFBF2948219210F800356B71 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		EFBF2949219210F800356B71 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		EFD52F7821989EB5007F2A65 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +140,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EF0AF3332199D6EC007851A4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EF0AF3342199D70F007851A4 /* DataBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		EF3D06D7219140950020D310 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +162,8 @@
 				EFA4DD4D2190599D00C0B431 /* SigninViewController.swift */,
 				EF8466BE2191D17F00A4DD7E /* ListNoteViewController.swift */,
 				EF0A968921956A2C00A28D85 /* CreateViewController.swift */,
+				EF9431B2219C0F0E000EB681 /* EditViewController.swift */,
+				EF9431B6219C12D9000EB681 /* SettingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -161,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				EF0A96852195603E00A28D85 /* Notes.swift */,
+				EFD52F7821989EB5007F2A65 /* Users.swift */,
+				EF9431B4219C116B000EB681 /* Edits.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +220,7 @@
 				EF3D06DA2191428B0020D310 /* Assets.xcassets */,
 				EFA4DD572190599F00C0B431 /* Info.plist */,
 				EF3D06D5219139B00020D310 /* GoogleService-Info.plist */,
+				EF0AF3332199D6EC007851A4 /* Base */,
 				EF5763C82192B255004FF5E0 /* ViewController */,
 				EF5763CC2192B475004FF5E0 /* Models */,
 				EF5763C92192B2B2004FF5E0 /* Extensions */,
@@ -489,12 +512,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF0A968A21956A2C00A28D85 /* CreateViewController.swift in Sources */,
+				EFD52F7921989EB5007F2A65 /* Users.swift in Sources */,
 				EF8466BF2191D17F00A4DD7E /* ListNoteViewController.swift in Sources */,
+				EF9431B7219C12D9000EB681 /* SettingViewController.swift in Sources */,
 				EF5763CB2192B2FB004FF5E0 /* Appdelegate:GoogleSignin.swift in Sources */,
 				EFBF294A219210F800356B71 /* ListTableViewCell.swift in Sources */,
+				EF0AF3352199D70F007851A4 /* DataBase.swift in Sources */,
 				EFA4DD4E2190599D00C0B431 /* SigninViewController.swift in Sources */,
+				EF9431B5219C116B000EB681 /* Edits.swift in Sources */,
 				EFA4DD4C2190599D00C0B431 /* AppDelegate.swift in Sources */,
 				EF0A96862195603E00A28D85 /* Notes.swift in Sources */,
+				EF9431B3219C0F0E000EB681 /* EditViewController.swift in Sources */,
 				EF0A96882195609A00A28D85 /* referenceSevices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
