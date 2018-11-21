@@ -18,7 +18,7 @@ class SigninViewController: UIViewController ,GIDSignInUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       SignIn()
+        SignIn()
     }
     
     func reference(to collectionReference: referenceSevices ) -> CollectionReference{
@@ -27,7 +27,7 @@ class SigninViewController: UIViewController ,GIDSignInUIDelegate {
     
     func SignIn() {
         GIDSignIn.sharedInstance().uiDelegate = self
-      
+        
         
     }
     

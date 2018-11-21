@@ -11,7 +11,7 @@ import Firebase
 import GoogleSignIn
 
 extension AppDelegate: GIDSignInDelegate {
-
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
         if let err = error {

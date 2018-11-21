@@ -15,9 +15,17 @@ class CreateViewController: UIViewController {
     @IBOutlet weak var txtTitle: UITextField!
     @IBOutlet weak var txvContent: UITextView!
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign Out ", style: .done, target: self, action:#selector (btnSignOut))
+        customNavigation()
+    }
+    func customNavigation() {
+    navigationItem.title = "Tạo Mới"
+    self.navigationItem.hidesBackButton = true
+    navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Xong", style: .done, target: self, action:#selector (btnSuccess))
     }
     
     func reference(to collectionReference: referenceSevices  ) -> CollectionReference{
@@ -25,17 +33,12 @@ class CreateViewController: UIViewController {
     }
     
     
-    @IBAction func btnSignOut() {
-        GIDSignIn.sharedInstance().signOut()
-        print("Sign Out")
-    }
-    
-    @IBAction func btnNewNote(_ sender: Any) {
+    @IBAction func btnSuccess() {
         let user =  Auth.auth().currentUser
         let userUid = user?.uid
         
-        guard let textTitle = txtTitle.text else {return}
-        guard let textContent = txvContent.text else {return}
+       guard let textTitle = txtTitle.text else {return}
+       guard let textContent = txvContent.text else {return}
         let dataSave : [String: Any] = [notesDocuments.title : textTitle,
                                         notesDocuments.content : textContent,
                                         Users.uid : userUid as Any]
@@ -47,7 +50,11 @@ class CreateViewController: UIViewController {
                 print("OK!")
                 
             }
-      
         }
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func btnNewNote(_ sender: Any) {
+    navigationController?.popViewController(animated: true)
     }
 }
