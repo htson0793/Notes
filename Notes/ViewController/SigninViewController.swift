@@ -19,6 +19,8 @@ class SigninViewController: UIViewController ,GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         SignIn()
+        self.navigationController?.isNavigationBarHidden = true
+        
     }
     
     func reference(to collectionReference: referenceSevices ) -> CollectionReference{

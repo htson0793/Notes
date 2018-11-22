@@ -18,6 +18,7 @@
 		EF3D06DB2191428B0020D310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3D06DA2191428B0020D310 /* Assets.xcassets */; };
 		EF5763CB2192B2FB004FF5E0 /* Appdelegate:GoogleSignin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5763CA2192B2FB004FF5E0 /* Appdelegate:GoogleSignin.swift */; };
 		EF8466BF2191D17F00A4DD7E /* ListNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8466BE2191D17F00A4DD7E /* ListNoteViewController.swift */; };
+		EF889EFC21A58B7400542702 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF889EFB21A58B7400542702 /* Photo.swift */; };
 		EF9431B3219C0F0E000EB681 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9431B2219C0F0E000EB681 /* EditViewController.swift */; };
 		EF9431B5219C116B000EB681 /* Edits.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9431B4219C116B000EB681 /* Edits.swift */; };
 		EFA4DD4C2190599D00C0B431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4DD4B2190599D00C0B431 /* AppDelegate.swift */; };
@@ -70,6 +71,7 @@
 		EF3D06DA2191428B0020D310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5763CA2192B2FB004FF5E0 /* Appdelegate:GoogleSignin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appdelegate:GoogleSignin.swift"; sourceTree = "<group>"; };
 		EF8466BE2191D17F00A4DD7E /* ListNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNoteViewController.swift; sourceTree = "<group>"; };
+		EF889EFB21A58B7400542702 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		EF9431B2219C0F0E000EB681 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		EF9431B4219C116B000EB681 /* Edits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edits.swift; sourceTree = "<group>"; };
 		EFA4DD482190599D00C0B431 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 				EFD52F7821989EB5007F2A65 /* Users.swift */,
 				EF9431B4219C116B000EB681 /* Edits.swift */,
 				EFE8748321A1CA29004A257B /* Setting.swift */,
+				EF889EFB21A58B7400542702 /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				EF5763CB2192B2FB004FF5E0 /* Appdelegate:GoogleSignin.swift in Sources */,
 				EFBF294A219210F800356B71 /* ListTableViewCell.swift in Sources */,
 				EFA4DD4E2190599D00C0B431 /* SigninViewController.swift in Sources */,
+				EF889EFC21A58B7400542702 /* Photo.swift in Sources */,
 				EF9431B5219C116B000EB681 /* Edits.swift in Sources */,
 				EFA4DD4C2190599D00C0B431 /* AppDelegate.swift in Sources */,
 				EF0A96862195603E00A28D85 /* Notes.swift in Sources */,

@@ -21,7 +21,7 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var mysetting = ["Cỡ Chữ", "Màu Chữ", "Mã Bảo Vệ"]
     var setting = [SettingValue]()
-
+    var photos = [Photo]()
     @IBOutlet weak var btnSignOut: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,18 +45,33 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
         //PhotoID
         let storage = Storage.storage()
         let storageRef = storage.reference()
-   
+        let imageRef = storageRef.child(Photo.image)
+        
+        let data = Data()
+        let uploadData = imageRef.putData(data, metadata: nil) { (metadata, error) in
+            guard let metadata = metadata else {
+                return
+            }
+        let size = metadata.size
+            imageRef.downloadURL{(url, error) in
+                guard let downloadURL = url else {
+                    return
+                }
+            }
+        }
+        
+        
         //email
         self.lbProfile.text = Auth.auth().currentUser?.email
         
     }
-
-   
+    
+    
     @IBAction func btnSignout(_ sender: Any) {
         //SignOut
         GIDSignIn.sharedInstance().signOut()
         
-
+        
         //Backsignin
         let sb = UIStoryboard(name: "Main", bundle: Bundle.main)
         let view = sb.instantiateViewController(withIdentifier: "signinVC")
